@@ -99,7 +99,6 @@ def previous_commit(commits, sha):
 def main():
     ALWAYS_INCLUDE = always_include()
     print "USER => '{}'".format(USER)
-    print 'ALWAYS_INCLUDE => {}'.format(ALWAYS_INCLUDE)
 
     debug = os.environ.get('GIT_VDIFF_DEBUG')
 
