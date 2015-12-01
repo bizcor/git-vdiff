@@ -17,7 +17,6 @@ Examples:
 ```
 $ ( unset GIT_VDIFF_DEBUG ; export GIT_VDIFF_USER=bizcor ; ~/projects/bizcor/git-vdiff/bin/git-vdiff.py ~/projects/bizcor/junkjunkjunk/ )
 USER => 'bizcor'
-ALWAYS_INCLUDE => None
 
 [...snip...]
 vimdiff -u /Users/blarf/.my-vimdiffrc <( echo add9617... 632cdcf:a/README.md [M] Tue Dec 1 12:38:14 2015 -0800 "#74" ; git show 632cdcf ) <( echo add9617... c8189db:b/README.md [M] Tue Dec 1 12:38:14 2015 -0800 "#74" ; git show c8189db )
@@ -54,7 +53,6 @@ Here is the debug output:
 $ ( export GIT_VDIFF_DEBUG=1 ; export GIT_VDIFF_USER=bizcor ; ~/projects/bizcor/git-vdiff/bin/git-vdiff.py ~/projects/bizcor/junkjunkjunk/ )
 0 bash  1 delve  2 bash  3 bash  4* bash
 USER => 'bizcor'
-ALWAYS_INCLUDE => None
 
 commit add9617fea82dc9df8310241edf761f4d8dbb00a
 Author: <bizcor@gmail.com>
