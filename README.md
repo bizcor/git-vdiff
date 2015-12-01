@@ -15,7 +15,7 @@ My `.my-vimdiffrc` file includes `color pablo`.
 Examples:
 
 ```
-$ ( unset ALWAYS_INCLUDE ; unset GIT_VDIFF_DEBUG ; export GIT_VDIFF_USER=bizcor ; ~/projects/bizcor/git-vdiff/bin/git-vdiff.py ~/projects/bizcor/junkjunkjunk/ )
+$ ( unset GIT_VDIFF_DEBUG ; export GIT_VDIFF_USER=bizcor ; ~/projects/bizcor/git-vdiff/bin/git-vdiff.py ~/projects/bizcor/junkjunkjunk/ )
 USER => 'bizcor'
 ALWAYS_INCLUDE => None
 
@@ -51,7 +51,7 @@ Then I place the cursor on each line in turn and do:
 Here is the debug output:
 
 ```
-$ ( unset ALWAYS_INCLUDE ; export GIT_VDIFF_DEBUG=1 ; export GIT_VDIFF_USER=bizcor ; ~/projects/bizcor/git-vdiff/bin/git-vdiff.py ~/projects/bizcor/junkjunkjunk/ )
+$ ( export GIT_VDIFF_DEBUG=1 ; export GIT_VDIFF_USER=bizcor ; ~/projects/bizcor/git-vdiff/bin/git-vdiff.py ~/projects/bizcor/junkjunkjunk/ )
 0 bash  1 delve  2 bash  3 bash  4* bash
 USER => 'bizcor'
 ALWAYS_INCLUDE => None
