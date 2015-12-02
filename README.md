@@ -51,9 +51,9 @@ Here is the debug output:
 
 ```
 $ ( export GIT_VDIFF_DEBUG=1 ; export GIT_VDIFF_USER=bizcor ; ~/projects/bizcor/git-vdiff/bin/git-vdiff.py ~/projects/bizcor/junkjunkjunk/ )
-0 bash  1 delve  2 bash  3 bash  4* bash
 USER => 'bizcor'
 
+[...snip...]
 commit add9617fea82dc9df8310241edf761f4d8dbb00a
 Author: <bizcor@gmail.com>
 Date:   Tue Dec 1 12:38:14 2015 -0800
